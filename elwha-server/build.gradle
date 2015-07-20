@@ -1,0 +1,25 @@
+apply plugin: 'war'
+apply plugin: 'pegasus'
+
+ext.apiProject = project(':elwha-api')
+dependencies {
+  compile project(path: ':elwha-api', configuration: 'dataTemplate')
+  compile spec.product.pegasus.restliServer
+}
+
+// Below is only used for running jetty from within gradle for demo purposes
+// e.g. 'gradle JettyRunWar'.
+
+configurations {
+  jetty8
+}
+
+dependencies {
+  jetty8 "org.mortbay.jetty:jetty-runner:8.1.15.v20140411"
+}
+
+task JettyRunWar(type: JavaExec) {
+  main = "org.mortbay.jetty.runner.Runner"
+  args = [war.archivePath]
+  classpath configurations.jetty8
+}

@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "Elwha",
+  "namespace": "gov.nasa.jpl.memex.elwha",
+  "doc": "Elwha data schema",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "doc": "An example 'message' field of type string"
+    }
+  ]
+}
