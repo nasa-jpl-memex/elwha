@@ -1,0 +1,4 @@
+
+include 'src/main/java/gov/nasa/jpl/memex/elwha/api'
+include 'src/main/java/gov/nasa/jpl/memex/elwha/server'
+include 'src/main/java/gov/nasa/jpl/memex/elwha/client'

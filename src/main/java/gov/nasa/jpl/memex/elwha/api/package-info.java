@@ -14,8 +14,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * Service package defines the elwha daemon which is used to monitor
- * Twitter streams.
- */
-package gov.nasa.jpl.memex.elwha.service;
+package gov.nasa.jpl.memex.elwha.api;
