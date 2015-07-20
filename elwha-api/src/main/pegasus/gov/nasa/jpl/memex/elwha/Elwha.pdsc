@@ -5,9 +5,9 @@
   "doc": "Elwha data schema",
   "fields": [
     {
-      "name": "message",
+      "name": "userIds",
       "type": "string",
-      "doc": "An example 'message' field of type string"
+      "doc": "A string of comma separated user ids. track(comma separated filter terms)"
     }
   ]
 }
