@@ -14,6 +14,10 @@ The name Elwha itself relates to the [River Elwha](https://en.wikipedia.org/wiki
 at Elwha snowfinger in the Olympic Range of Olympic National Park, it flows generally north to 
 the Strait of Juan de Fuca. Most of the river is in Olympic National Park.
 
+# Twitter OAuth Credentials
+
+You will need to setup application credentials so you can use this applications. You can read more about token generation in [Twitter's Documentation](https://dev.twitter.com/oauth/overview/application-owner-access-tokens). After you have followed the instructions and generated your consumer and access keys be sure to update the [twitter4j.properties](https://github.com/MJJoyce/elwha/blob/master/elwha-server/src/main/resources/twitter4j.properties) file with this information. You may need to rebuild after making these changes before they take effect.
+
 # Build, Installation and Usage
 
 This is a rest.li application using gradle as the build system.
